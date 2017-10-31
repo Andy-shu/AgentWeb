@@ -11,17 +11,16 @@ import android.support.v7.app.AppCompatActivity;
 
 public class ContainerActivity extends AppCompatActivity {
 
-    @Override
-    protected void onCreate(@Nullable Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
+  @Override
+  protected void onCreate(@Nullable Bundle savedInstanceState) {
+    super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.activity_common);
+    setContentView(R.layout.activity_common);
 
-        Fragment mFragment=null;
-        getSupportFragmentManager()
-                .beginTransaction()
-                .add(R.id.container_framelayout,mFragment=EasyWebFragment.getInstance(new Bundle()),EasyWebFragment.class.getName())
-                .show(mFragment)
-                .commit();
-    }
+    Fragment mFragment = null;
+    getSupportFragmentManager()
+        .beginTransaction().add(R.id.container_framelayout,
+            mFragment = EasyWebFragment.getInstance(new Bundle()), EasyWebFragment.class.getName())
+        .show(mFragment).commit();
+  }
 }

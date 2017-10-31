@@ -10,11 +10,12 @@
 
     </style>
 
-        <style name="AppBaseTheme" parent="Theme.AppCompat.Light.DarkActionBar"></style>
-        <style name="AppTheme" parent="AppBaseTheme">
-            <item name="windowActionBar">false</item>
-            <item name="windowNoTitle">true</item>
-        </style>
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light.DarkActionBar"></style>
+
+    <style name="AppTheme" parent="AppBaseTheme">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
 
     <style name="toolBar">
         <item name="colorControlNormal">#ffffff</item>
@@ -24,11 +25,8 @@
     </style>
 
     <style name="titlestyle">
-
         <item name="android:textSize">12sp</item>
     </style>
-
-
 
 
 </resources>
